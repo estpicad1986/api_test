@@ -1,0 +1,8 @@
+model\Article.class
+specifications\RequestSpecs.class
+helper\RequestHelper.class
+specifications\ResponseSpecs.class
+model\Comment.class
+model\User.class
+helper\DataHelper.class
+model\Post.class

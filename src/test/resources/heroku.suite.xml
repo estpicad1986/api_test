@@ -1,0 +1,47 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="LocalExecution" thread-count="1" parallel="tests">
+
+    <parameter name= "baseURL" value="https://api-coffee-testing.herokuapp.com"> </parameter>
+
+   <test name="Post">
+        <classes>
+            <class name="PostTests">
+            <methods>
+                <include name="Create_Post_Success"> </include>
+                <include name="Create_Post_Unsuccessful"></include>
+                <include name="Get_One_Post"></include>
+                <include name="Get_Invalid_Post"></include>
+                <include name="Get_All_Posts"></include>
+                <include name="Update_Post_Success"></include>
+                <include name="Update_Post_Unsuccessful"></include>
+                <include name="Delete_Invalid_Post"></include>
+                <include name="Delete_Post_Success"></include>
+                <include name="Test_Invalid_Token_New_Post">
+                </include>
+            </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Comment">
+        <classes>
+            <class name="CommentTests">
+                <methods>
+                    <include name="Create_Comment_Success"> </include>
+                    <include name="Create_Comment_Unsuccessful"></include>
+                    <include name="Get_One_Comment"></include>
+                    <include name="Get_Invalid_Comment"></include>
+                    <include name="Get_All_Comments"></include>
+                    <include name="Update_Comment_Success"></include>
+                    <include name="Update_Comment_Unsuccessful"></include>
+                    <include name="Delete_Invalid_Comment"></include>
+                    <include name="Delete_Comment_Success">
+                    </include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
+
